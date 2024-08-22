@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #6c6b6b, #0f0f0f);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url("3.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+nav {
+    background-color: #dbdbdb;
+    text-align: center;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #0066cc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.services, .about, .contact {
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    text-indent: -20px;
+    position: relative;
+}
+
+li:before {
+    content: "•";
+    color: #fff768;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: #898a8c;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-image {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
